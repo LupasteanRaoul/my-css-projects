@@ -1,0 +1,10 @@
+/* CSS for design-a-contact-form */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+h1 {
+    color: #333;
+}
