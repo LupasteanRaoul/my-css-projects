@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS Showcase - Portofoliu profesional de proiecte web development cu HTML, CSS și JavaScript">
+    <meta name="author" content="Lupastean Raoul">
+    <title>CSS Showcase | Web Development Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-code"></i>
+                <span>CSS Showcase</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Acasă</a></li>
+                <li><a href="#projects" class="nav-link">Proiecte</a></li>
+                <li><a href="#about" class="nav-link">Despre</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">CSS Showcase</span>
+                    <span class="title-line">Web Development</span>
+                </h1>
+                <p class="hero-subtitle">Portofoliu profesional de proiecte web - HTML, CSS & JavaScript</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="6">0</span>
+                        <span class="stat-label">Proiecte</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="100">0</span>
+                        <span class="stat-label">% Responsive</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">Tehnologii</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Explorează Proiectele</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="https://github.com/LupasteanRaoul/my-css-projects" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-controls">
+                            <span class="control-dot red"></span>
+                            <span class="control-dot yellow"></span>
+                            <span class="control-dot green"></span>
+                        </div>
+                        <span class="window-title">showcase.css</span>
+                    </div>
+                    <div class="window-content">
+                        <pre><code><span class="code-selector">.portfolio</span> {
+  <span class="code-property">display</span>: <span class="code-value">flex</span>;
+  <span class="code-property">flex-direction</span>: <span class="code-value">column</span>;
+  <span class="code-property">gap</span>: <span class="code-value">2rem</span>;
+  <span class="code-property">animation</span>: <span class="code-value">fadeIn 0.8s ease</span>;
+}
+
+<span class="code-selector">.project</span> {
+  <span class="code-property">transition</span>: <span class="code-value">transform 0.3s</span>;
+  <span class="code-property">cursor</span>: <span class="code-value">pointer</span>;
+}
+
+<span class="code-selector">.project:hover</span> {
+  <span class="code-property">transform</span>: <span class="code-value">translateY(-8px)</span>;
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Proiecte Realizate</h2>
+                <p class="section-description">Colecție de proiecte web development care demonstrează abilități în HTML5, CSS3 și JavaScript</p>
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Toate</button>
+                <button class="filter-btn" data-filter="ui">UI/UX</button>
+                <button class="filter-btn" data-filter="interactive">Interactive</button>
+                <button class="filter-btn" data-filter="responsive">Responsive</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: Cafe Menu -->
+                <article class="project-card" data-category="ui responsive" data-testid="project-cafe-menu">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&h=600&fit=crop" alt="Cafe Menu Design" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="Design-a-Cafe-Menu/index.html" target="_blank" class="project-link" data-testid="cafe-menu-live-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/LupasteanRaoul/my-css-projects/tree/main/Design-a-Cafe-Menu" target="_blank" class="project-link" data-testid="cafe-menu-github-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>Cod Sursă</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Design Cafe Menu</h3>
+                        <p class="project-description">Meniu de cafenea elegant și responsive cu design modern, prezentând cafea și deserturi într-un layout profesional și ușor de navigat.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="meta-item"><i class="fas fa-calendar"></i> 2024</span>
+                            <span class="meta-item"><i class="fas fa-eye"></i> UI Design</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: Book Inventory App -->
+                <article class="project-card" data-category="interactive responsive" data-testid="project-book-inventory">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=800&h=600&fit=crop" alt="Book Inventory Application" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="book-inventory-app/index.html" target="_blank" class="project-link" data-testid="book-inventory-live-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/LupasteanRaoul/my-css-projects/tree/main/book-inventory-app" target="_blank" class="project-link" data-testid="book-inventory-github-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>Cod Sursă</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Book Inventory App</h3>
+                        <p class="project-description">Aplicație interactivă pentru gestionarea inventarului de cărți cu funcții CRUD complete, validare formular și stocare locală pentru persistența datelor.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">LocalStorage</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="meta-item"><i class="fas fa-calendar"></i> 2024</span>
+                            <span class="meta-item"><i class="fas fa-code"></i> JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: Product Landing Page -->
+                <article class="project-card" data-category="ui responsive" data-testid="project-landing-page">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="Product Landing Page" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="build-a-product-landing-page/index.html" target="_blank" class="project-link" data-testid="landing-page-live-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/LupasteanRaoul/my-css-projects/tree/main/build-a-product-landing-page" target="_blank" class="project-link" data-testid="landing-page-github-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>Cod Sursă</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Product Landing Page</h3>
+                        <p class="project-description">Landing page modern pentru produs cu secțiuni hero, features, pricing și contact. Design responsive optimizat pentru conversie și experiență utilizator.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Vite</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="meta-item"><i class="fas fa-calendar"></i> 2024</span>
+                            <span class="meta-item"><i class="fas fa-rocket"></i> Landing Page</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4: Contact Form -->
+                <article class="project-card" data-category="interactive ui" data-testid="project-contact-form">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=800&h=600&fit=crop" alt="Contact Form Design" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="design-a-contact-form/index.html" target="_blank" class="project-link" data-testid="contact-form-live-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/LupasteanRaoul/my-css-projects/tree/main/design-a-contact-form" target="_blank" class="project-link" data-testid="contact-form-github-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>Cod Sursă</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Contact Form Design</h3>
+                        <p class="project-description">Formular de contact elegant cu validare în timp real, feedback vizual și animații subtile. Implementare completă cu verificare email și mesaje de eroare.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Validation</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="meta-item"><i class="fas fa-calendar"></i> 2024</span>
+                            <span class="meta-item"><i class="fas fa-envelope"></i> Form</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5: Personal Portfolio -->
+                <article class="project-card" data-category="ui responsive" data-testid="project-personal-portfolio">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?w=800&h=600&fit=crop" alt="Personal Portfolio" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="personal-portfolio/index.html" target="_blank" class="project-link" data-testid="personal-portfolio-live-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/LupasteanRaoul/my-css-projects/tree/main/personal-portfolio" target="_blank" class="project-link" data-testid="personal-portfolio-github-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>Cod Sursă</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Personal Portfolio</h3>
+                        <p class="project-description">Website portfolio personal cu secțiuni despre, proiecte, abilități și contact. Design modern și profesional pentru prezentarea profilului personal.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Smooth Scroll</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="meta-item"><i class="fas fa-calendar"></i> 2024</span>
+                            <span class="meta-item"><i class="fas fa-user"></i> Portfolio</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6: Technical Documentation -->
+                <article class="project-card" data-category="ui responsive" data-testid="project-technical-docs">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?w=800&h=600&fit=crop" alt="Technical Documentation" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="technical-documentation-page/index.html" target="_blank" class="project-link" data-testid="technical-docs-live-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/LupasteanRaoul/my-css-projects/tree/main/technical-documentation-page" target="_blank" class="project-link" data-testid="technical-docs-github-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>Cod Sursă</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Technical Documentation</h3>
+                        <p class="project-description">Pagină de documentație tehnică cu navigare fixă, syntax highlighting și structură clară. Layout optimizat pentru citire și înțelegere rapidă.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Documentation</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="meta-item"><i class="fas fa-calendar"></i> 2024</span>
+                            <span class="meta-item"><i class="fas fa-book"></i> Docs</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Despre Proiecte</h2>
+                    <p class="about-description">Această colecție de proiecte demonstrează competențe solide în dezvoltarea web front-end, cu focus pe:</p>
+                    <ul class="about-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>HTML5 Semantic:</strong> Utilizarea corectă a tag-urilor semantice pentru structură optimă</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>CSS3 Modern:</strong> Flexbox, Grid, Animații, și Responsive Design</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>JavaScript Vanilla:</strong> Manipulare DOM, Event Handling, și LocalStorage</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Responsive Design:</strong> Mobile-first approach cu breakpoints optimizate</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Best Practices:</strong> Cod curat, comentat și ușor de întreținut</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Performance:</strong> Optimizare pentru încărcare rapidă și experiență fluidă</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-skills">
+                    <div class="skill-category">
+                        <h3>Frontend Technologies</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-react"></i>
+                                <span>React</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Workflow</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Responsive</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-code"></i>
+                                <span>VS Code</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-description">Sunt deschis la noi oportunități și colaborări</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/LupasteanRaoul" target="_blank">@LupasteanRaoul</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Repository</h3>
+                            <a href="https://github.com/LupasteanRaoul/my-css-projects" target="_blank">my-css-projects</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub Pages</h3>
+                            <a href="https://lupasteanraoul.github.io/my-css-projects/" target="_blank">Live Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-code"></i>
+                    <span>CSS Showcase</span>
+                </div>
+                <p class="footer-text">© 2024 Lupastean Raoul. Toate drepturile rezervate.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/LupasteanRaoul/my-css-projects" target="_blank" class="footer-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+# Exclude proiectul landing page (dacă este în acest folder)
+build-a-product-landing-page/
+
+# Exclude fișierele sistem/editor
+.DS_Store
+node_modules/
+*.log
+.env
+
+# Opțional: exclude fișierele din rădăcină dacă vrei DOAR folderele
+# index.html
+# styles.css
+# script.js
