@@ -1,62 +1,467 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cafe Menu</title>
+    <meta name="description" content="Cafe Delight - Cele mai bune cafea și prăjituri din București">
+    <title>Cafe Delight | Meniu Premium</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="styles.css" rel="stylesheet"/>
   </head>
   <body>
-    <div class="menu">
-      <main>
-        <h1>CAMPER CAFE</h1>
-        <p class="established">Est. 2020</p>
-        <hr>
-        <section>
-          <h2>Coffee</h2>
-          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon"/>
-          <article class="item">
-            <p class="flavor">French Vanilla</p><p class="price">3.00</p>
-          </article>
-          <article class="item">
-            <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
-          </article>
-          <article class="item">
-            <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
-          </article>
-          <article class="item">
-            <p class="flavor">Hazelnut</p><p class="price">4.00</p>
-          </article>
-          <article class="item">
-            <p class="flavor">Mocha</p><p class="price">4.50</p>
-          </article>
-        </section>
-        <section>
-          <h2>Desserts</h2>
-          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon"/>
-          <article class="item">
-            <p class="dessert">Donut</p><p class="price">1.50</p>
-          </article>
-          <article class="item">
-            <p class="dessert">Cherry Pie</p><p class="price">2.75</p>
-          </article>
-          <article class="item">
-            <p class="dessert">Cheesecake</p><p class="price">3.00</p>
-          </article>
-          <article class="item">
-            <p class="dessert">Cinnamon Roll</p><p class="price">2.50</p>
-          </article>
-        </section>
-      </main>
-      <hr class="bottom-line">
-      <footer>
-        <address>
-          <p>
-            <a href="https://www.freecodecamp.org" target="_blank">Visit our website</a>
+    <div class="container">
+      <header class="header">
+        <div class="logo-container">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80" alt="Cafe Delight Logo" class="logo">
+          <div>
+            <h1 class="cafe-name">CAFE DELIGHT</h1>
+            <p class="tagline">Specialiști în cafea artizanală din 2018</p>
+          </div>
+        </div>
+        
+        <div class="header-info">
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Strada Lipscani 53, București</span>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-clock"></i>
+            <span>Luni-Duminică: 7:00-22:00</span>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <span>+40 721 123 456</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="menu-container">
+        <main class="menu">
+          <div class="menu-header">
+            <div class="established-badge">
+              <span class="established">Fondat în 2018</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>4.7/5 pe Google</span>
+              </div>
+            </div>
+            
+            <div class="menu-categories">
+              <button class="category-btn active" data-category="all">Toate</button>
+              <button class="category-btn" data-category="coffee">Cafea</button>
+              <button class="category-btn" data-category="tea">Ceai</button>
+              <button class="category-btn" data-category="dessert">Desert</button>
+              <button class="category-btn" data-category="breakfast">Mic Dejun</button>
+            </div>
+          </div>
+          
+          <div class="separator">
+            <div class="line"></div>
+            <div class="icon"><i class="fas fa-coffee"></i></div>
+            <div class="line"></div>
+          </div>
+
+          <!-- Coffee Section -->
+          <section class="menu-section" data-category="coffee">
+            <div class="section-header">
+              <h2><i class="fas fa-mug-hot"></i> Cafea Artizanală</h2>
+              <p class="section-description">Cafea proaspăt prăjită, boabe single-origin</p>
+            </div>
+            
+            <div class="item-grid">
+              <article class="item" data-popular="true">
+                <div class="item-content">
+                  <div class="item-header">
+                    <h3 class="flavor">Espresso Dublu</h3>
+                    <span class="popular-tag"><i class="fas fa-fire"></i> Popular</span>
+                  </div>
+                  <p class="item-description">Două shot-uri de espresso intens, perfect pentru dimineața</p>
+                  <div class="item-details">
+                    <span class="origin"><i class="fas fa-globe-europe"></i> Brazilia</span>
+                    <span class="strength"><i class="fas fa-bolt"></i> Puternic</span>
+                  </div>
+                </div>
+                <p class="price">15.00 RON</p>
+              </article>
+
+              <article class="item">
+                <div class="item-content">
+                  <div class="item-header">
+                    <h3 class="flavor">Cappuccino Clasic</h3>
+                  </div>
+                  <p class="item-description">Espresso cu spumă de lapte fină și pudră de cacao</p>
+                  <div class="item-details">
+                    <span class="origin"><i class="fas fa-globe-europe"></i> Etiopia</span>
+                    <span class="strength"><i class="fas fa-leaf"></i> Mediu</span>
+                  </div>
+                </div>
+                <p class="price">18.50 RON</p>
+              </article>
+
+              <article class="item" data-new="true">
+                <div class="item-content">
+                  <div class="item-header">
+                    <h3 class="flavor">Flat White</h3>
+                    <span class="new-tag"><i class="fas fa-leaf"></i> Nou</span>
+                  </div>
+                  <p class="item-description">Espresso dublu cu micro-spumă de lapte, cremos și echilibrat</p>
+                  <div class="item-details">
+                    <span class="origin"><i class="fas fa-globe-europe"></i> Colombia</span>
+                    <span class="strength"><i class="fas fa-leaf"></i> Ușor</span>
+                  </div>
+                </div>
+                <p class="price">19.00 RON</p>
+              </article>
+
+              <article class="item">
+                <div class="item-content">
+                  <div class="item-header">
+                    <h3 class="flavor">Latte Art</h3>
+                  </div>
+                  <p class="item-description">Espresso cu lapte aburit și artă pe suprafață</p>
+                  <div class="item-details">
+                    <span class="origin"><i class="fas fa-globe-europe"></i> Guatemala</span>
+                    <span class="strength"><i class="fas fa-leaf"></i> Blând</span>
+                  </div>
+                </div>
+                <p class="price">20.00 RON</p>
+              </article>
+
+              <article class="item">
+                <div class="item-content">
+                  <div class="item-header">
+                    <h3 class="flavor">Mocha Special</h3>
+                  </div>
+                  <p class="item-description">Ciocolată belgiană, espresso și lapte, cu frișcă</p>
+                  <div class="item-details">
+                    <span class="origin"><i class="fas fa-globe-europe"></i> Blend Special</span>
+                    <span class="strength"><i class="fas fa-candy-cane"></i> Dulce</span>
+                  </div>
+                </div>
+                <p class="price">22.50 RON</p>
+              </article>
+            </div>
+          </section>
+
+          <!-- Tea Section -->
+          <section class="menu-section" data-category="tea">
+            <div class="section-header">
+              <h2><i class="fas fa-leaf"></i> Ceaiuri Premium</h2>
+              <p class="section-description">Selecție de ceaiuri organice și aromatizate</p>
+            </div>
+            
+            <div class="item-grid">
+              <article class="item">
+                <div class="item-content">
+                  <h3 class="flavor">Ceai Verde Matcha</h3>
+                  <p class="item-description">Matcha premium japonez, batut manual</p>
+                  <div class="item-details">
+                    <span class="origin"><i class="fas fa-globe-asia"></i> Japonia</span>
+                  </div>
+                </div>
+                <p class="price">21.00 RON</p>
+              </article>
+
+              <article class="item">
+                <div class="item-content">
+                  <h3 class="flavor">Earl Grey Imperial</h3>
+                  <p class="item-description">Ceai negru cu ulei de bergamotă</p>
+                  <div class="item-details">
+                    <span class="origin"><i class="fas fa-globe-europe"></i> Anglia</span>
+                  </div>
+                </div>
+                <p class="price">16.00 RON</p>
+              </article>
+
+              <article class="item">
+                <div class="item-content">
+                  <h3 class="flavor">Ceai de Mentă Proaspătă</h3>
+                  <p class="item-description">Frunze de mentă proaspătă, organică</p>
+                  <div class="item-details">
+                    <span class="origin"><i class="fas fa-seedling"></i> Local</span>
+                  </div>
+                </div>
+                <p class="price">14.00 RON</p>
+              </article>
+            </div>
+          </section>
+
+          <!-- Desserts Section -->
+          <section class="menu-section" data-category="dessert">
+            <div class="section-header">
+              <h2><i class="fas fa-birthday-cake"></i> Deserturi Proaspete</h2>
+              <p class="section-description">Proaspete zilnic din brutăria noastră</p>
+            </div>
+            
+            <div class="item-grid">
+              <article class="item">
+                <div class="item-content">
+                  <h3 class="dessert">Cheesecake cu Fructe de Pădure</h3>
+                  <p class="item-description">Bază de biscuiți, cremă de brânză și topping de fructe proaspete</p>
+                  <div class="item-details">
+                    <span class="allergens"><i class="fas fa-exclamation-circle"></i> Conține lactoză, gluten</span>
+                  </div>
+                </div>
+                <p class="price">24.00 RON</p>
+              </article>
+
+              <article class="item" data-popular="true">
+                <div class="item-content">
+                  <div class="item-header">
+                    <h3 class="dessert">Tiramisu Clasic</h3>
+                    <span class="popular-tag"><i class="fas fa-fire"></i> Popular</span>
+                  </div>
+                  <p class="item-description">Savarină cu cafea, mascarpone și cacao</p>
+                  <div class="item-details">
+                    <span class="allergens"><i class="fas fa-exclamation-circle"></i> Conține ouă, lactoză</span>
+                  </div>
+                </div>
+                <p class="price">22.00 RON</p>
+              </article>
+
+              <article class="item">
+                <div class="item-content">
+                  <h3 class="dessert">Croissant cu Ciocolată</h3>
+                  <p class="item-description">Croissant proaspăt cu ciocolată belgiană topită</p>
+                  <div class="item-details">
+                    <span class="allergens"><i class="fas fa-exclamation-circle"></i> Conține gluten, alune</span>
+                  </div>
+                </div>
+                <p class="price">12.50 RON</p>
+              </article>
+
+              <article class="item">
+                <div class="item-content">
+                  <h3 class="dessert">Macarons Francezi (4 buc)</h3>
+                  <p class="item-description">Arome: vanilie, ciocolată, caramel, zmeură</p>
+                  <div class="item-details">
+                    <span class="allergens"><i class="fas fa-exclamation-circle"></i> Conține migdale, ouă</span>
+                  </div>
+                </div>
+                <p class="price">28.00 RON</p>
+              </article>
+            </div>
+          </section>
+
+          <!-- Breakfast Section -->
+          <section class="menu-section" data-category="breakfast">
+            <div class="section-header">
+              <h2><i class="fas fa-egg"></i> Mic Dejun</h2>
+              <p class="section-description">Servit până la ora 12:00</p>
+            </div>
+            
+            <div class="item-grid">
+              <article class="item">
+                <div class="item-content">
+                  <h3 class="flavor">English Breakfast</h3>
+                  <p class="item-description">Ouă, bacon, cârnați, roșii, ciuperci, fasole, pâine prăjită</p>
+                </div>
+                <p class="price">38.00 RON</p>
+              </article>
+
+              <article class="item">
+                <div class="item-content">
+                  <h3 class="flavor">Avocado Toast</h3>
+                  <p class="item-description">Pâine integrală, avocado, ou poșat, semințe de chia</p>
+                  <div class="item-details">
+                    <span class="dietary"><i class="fas fa-leaf"></i> Vegetarian</span>
+                  </div>
+                </div>
+                <p class="price">26.00 RON</p>
+              </article>
+
+              <article class="item">
+                <div class="item-content">
+                  <h3 class="flavor">Omletă cu Legume</h3>
+                  <p class="item-description">3 ouă, ardei, ciuperci, ceapă, brânză, pâine integrală</p>
+                </div>
+                <p class="price">22.00 RON</p>
+              </article>
+            </div>
+          </section>
+        </main>
+
+        <aside class="sidebar">
+          <div class="special-offer">
+            <div class="offer-badge">OFERTĂ ZILEI</div>
+            <h3>Meniu Mic Dejun + Cafea</h3>
+            <p>38.00 RON în loc de 48.00 RON</p>
+            <small>Valabil până la 12:00</small>
+          </div>
+
+          <div class="loyalty-card">
+            <h3><i class="fas fa-crown"></i> Cardul de Fidelitate</h3>
+            <p>Cumpără 9 cafele, a 10-a e gratuită!</p>
+            <div class="stamp-grid">
+              <div class="stamp filled"><i class="fas fa-check"></i></div>
+              <div class="stamp filled"><i class="fas fa-check"></i></div>
+              <div class="stamp filled"><i class="fas fa-check"></i></div>
+              <div class="stamp filled"><i class="fas fa-check"></i></div>
+              <div class="stamp filled"><i class="fas fa-check"></i></div>
+              <div class="stamp"><i class="fas fa-coffee"></i></div>
+              <div class="stamp"><i class="fas fa-coffee"></i></div>
+              <div class="stamp"><i class="fas fa-coffee"></i></div>
+              <div class="stamp"><i class="fas fa-coffee"></i></div>
+              <div class="stamp free">GRATIS</div>
+            </div>
+          </div>
+
+          <div class="features">
+            <h3><i class="fas fa-star"></i> Serviciile noastre</h3>
+            <ul>
+              <li><i class="fas fa-wifi"></i> WiFi gratuit rapid</li>
+              <li><i class="fas fa-plug"></i> Prize la fiecare masă</li>
+              <li><i class="fas fa-paw"></i> Pet-friendly</li>
+              <li><i class="fas fa-truck"></i> Livrare gratuită peste 50 RON</li>
+              <li><i class="fas fa-gift"></i> Pachete cadou personalizate</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4><i class="fas fa-map-marker-alt"></i> Locatia noastră</h4>
+            <p>Strada Lipscani 53<br>București 030033<br><i class="fas fa-subway"></i> Stație Piața Unirii</p>
+            <a href="https://maps.google.com/?q=Strada+Lipscani+53+Bucuresti" target="_blank" class="map-link">
+              <i class="fas fa-directions"></i> Vezi pe hartă
+            </a>
+          </div>
+
+          <div class="footer-section">
+            <h4><i class="fas fa-clock"></i> Program</h4>
+            <p><strong>Luni - Vineri:</strong> 7:00 - 22:00</p>
+            <p><strong>Sâmbătă - Duminică:</strong> 8:00 - 23:00</p>
+            <p class="holiday-note"><i class="fas fa-exclamation-circle"></i> Deschis și în zilele de sărbătoare</p>
+          </div>
+
+          <div class="footer-section">
+            <h4><i class="fas fa-phone"></i> Contact</h4>
+            <p><i class="fas fa-phone"></i> +40 721 123 456</p>
+            <p><i class="fas fa-envelope"></i> contact@cafedelight.ro</p>
+            
+            <div class="social-media">
+              <a href="https://facebook.com/cafedelight" target="_blank" class="social-icon">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://instagram.com/cafedelight" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://tiktok.com/@cafedelight" target="_blank" class="social-icon">
+                <i class="fab fa-tiktok"></i>
+              </a>
+              <a href="https://tripadvisor.com/cafedelight" target="_blank" class="social-icon">
+                <i class="fab fa-tripadvisor"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4><i class="fas fa-mobile-alt"></i> Aplicația noastră</h4>
+            <p>Comandă online și primește reduceri!</p>
+            <div class="app-badges">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" class="app-badge">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store" class="app-badge">
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2024 Cafe Delight. Toate drepturile rezervate.</p>
+          <p class="footer-links">
+            <a href="#">Termeni și condiții</a> | 
+            <a href="#">Politica de confidențialitate</a> | 
+            <a href="#">Politica de cookies</a>
           </p>
-          <p class="address">123 Free Code Camp Drive</p>
-        </address>
+        </div>
       </footer>
     </div>
+
+    <script>
+      // Filter menu items by category
+      document.querySelectorAll('.category-btn').forEach(button => {
+        button.addEventListener('click', function() {
+          // Remove active class from all buttons
+          document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.classList.remove('active');
+          });
+          
+          // Add active class to clicked button
+          this.classList.add('active');
+          
+          const category = this.dataset.category;
+          const sections = document.querySelectorAll('.menu-section');
+          
+          sections.forEach(section => {
+            if (category === 'all' || section.dataset.category === category) {
+              section.style.display = 'block';
+              setTimeout(() => {
+                section.style.opacity = '1';
+                section.style.transform = 'translateY(0)';
+              }, 10);
+            } else {
+              section.style.opacity = '0';
+              section.style.transform = 'translateY(20px)';
+              setTimeout(() => {
+                section.style.display = 'none';
+              }, 300);
+            }
+          });
+        });
+      });
+
+      // Add hover effect to menu items
+      document.querySelectorAll('.item').forEach(item => {
+        item.addEventListener('mouseenter', function() {
+          this.style.transform = 'translateY(-5px)';
+        });
+        
+        item.addEventListener('mouseleave', function() {
+          this.style.transform = 'translateY(0)';
+        });
+        
+        // Add click effect to show more details
+        item.addEventListener('click', function() {
+          const flavor = this.querySelector('.flavor, .dessert').textContent;
+          const price = this.querySelector('.price').textContent;
+          alert(`Ai selectat: ${flavor}\nPreț: ${price}\n\nPoți comanda la bar sau telefonic.`);
+        });
+      });
+
+      // Update loyalty card stamps on coffee click
+      document.querySelectorAll('[data-category="coffee"] .item').forEach(item => {
+        item.addEventListener('click', function() {
+          const stamps = document.querySelectorAll('.stamp:not(.filled):not(.free)');
+          if (stamps.length > 0) {
+            stamps[0].classList.add('filled');
+            stamps[0].innerHTML = '<i class="fas fa-check"></i>';
+            
+            // Check if all stamps are filled
+            const allStamps = document.querySelectorAll('.stamp:not(.free)');
+            const allFilled = Array.from(allStamps).every(stamp => stamp.classList.contains('filled'));
+            
+            if (allFilled) {
+              document.querySelector('.stamp.free').style.backgroundColor = '#2ecc71';
+              alert('🎉 Felicitări! Ai completat cardul de fidelitate. Următoarea cafea este gratuită!');
+            }
+          }
+        });
+      });
+
+      // Initialize menu with animation
+      document.addEventListener('DOMContentLoaded', function() {
+        const items = document.querySelectorAll('.item');
+        items.forEach((item, index) => {
+          item.style.animationDelay = `${index * 0.1}s`;
+          item.classList.add('animated');
+        });
+      });
+    </script>
   </body>
 </html>

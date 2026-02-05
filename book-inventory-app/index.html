@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Inventory Manager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-book-open"></i> Book Inventory Manager</h1>
+            <p>Track your reading progress and organize your library</p>
+        </header>
+
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-icon" style="background: var(--read);">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>2</h3>
+                    <p>Books Read</p>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon" style="background: var(--to-read);">
+                    <i class="fas fa-bookmark"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>1</h3>
+                    <p>To Read</p>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon" style="background: var(--in-progress);">
+                    <i class="fas fa-spinner"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>1</h3>
+                    <p>In Progress</p>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon" style="background: linear-gradient(135deg, #2ec4b6, #20a39e);">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>2.0</h3>
+                    <p>Average Rating</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All Books</button>
+                <button class="filter-btn" data-filter="read">Read</button>
+                <button class="filter-btn" data-filter="to-read">To Read</button>
+                <button class="filter-btn" data-filter="in-progress">In Progress</button>
+            </div>
+            
+            <button class="add-btn" id="addBookBtn">
+                <i class="fas fa-plus"></i> Add New Book
+            </button>
+        </div>
+
+        <table id="bookTable">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Category</th>
+                    <th>Status</th>
+                    <th>Rating</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="read">
+                    <td><strong>The Great Gatsby</strong></td>
+                    <td>F. Scott Fitzgerald</td>
+                    <td><span class="category-tag">Classic</span></td>
+                    <td><span class="status">Read</span></td>
+                    <td>
+                        <div class="rating" data-rating="3">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="actions">
+                            <button class="action-btn edit-btn">Edit</button>
+                            <button class="action-btn delete-btn">Delete</button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="to-read">
+                    <td><strong>1984</strong></td>
+                    <td>George Orwell</td>
+                    <td><span class="category-tag">Dystopian</span></td>
+                    <td><span class="status">To Read</span></td>
+                    <td>
+                        <div class="rating" data-rating="2">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="actions">
+                            <button class="action-btn edit-btn">Edit</button>
+                            <button class="action-btn delete-btn">Delete</button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="in-progress">
+                    <td><strong>Harry Potter</strong></td>
+                    <td>J.K. Rowling</td>
+                    <td><span class="category-tag">Fantasy</span></td>
+                    <td><span class="status">In Progress</span></td>
+                    <td>
+                        <div class="rating" data-rating="4">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="actions">
+                            <button class="action-btn edit-btn">Edit</button>
+                            <button class="action-btn delete-btn">Delete</button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="read">
+                    <td><strong>To Kill a Mockingbird</strong></td>
+                    <td>Harper Lee</td>
+                    <td><span class="category-tag">Classic</span></td>
+                    <td><span class="status">Read</span></td>
+                    <td>
+                        <div class="rating" data-rating="2">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="actions">
+                            <button class="action-btn edit-btn">Edit</button>
+                            <button class="action-btn delete-btn">Delete</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentație Tehnică Web Responsivă</title>
+    <meta name="description" content="Documentație tehnică pentru HTML, CSS, JavaScript și design responsiv">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
+      <i class="fas fa-bars"></i>
+    </button>
+    
+    <nav id="navbar" class="navbar">
+      <header>
+        <h1><i class="fas fa-code"></i> Documentație Web</h1>
+        <p class="subtitle">Ghid complet pentru dezvoltare web</p>
+      </header>
+      
+      <div class="nav-links-container">
+        <a class="nav-link" href="#HTML_Basics">
+          <i class="fab fa-html5"></i> HTML Basics
+        </a>
+        <a class="nav-link" href="#CSS_Styling">
+          <i class="fab fa-css3-alt"></i> CSS Styling
+        </a>
+        <a class="nav-link" href="#JavaScript_și_Java">
+          <i class="fab fa-js-square"></i> JavaScript & Java
+        </a>
+        <a class="nav-link" href="#Responsive_Design">
+          <i class="fas fa-mobile-alt"></i> Responsive Design
+        </a>
+        <a class="nav-link" href="#Media_Queries">
+          <i class="fas fa-desktop"></i> Media Queries
+        </a>
+        <a class="nav-link" href="#Best_Practices">
+          <i class="fas fa-star"></i> Best Practices
+        </a>
+      </div>
+      
+      <div class="nav-footer">
+        <div class="theme-toggle">
+          <span>Mod întunecat</span>
+          <label class="switch">
+            <input type="checkbox" id="theme-switch">
+            <span class="slider"></span>
+          </label>
+        </div>
+        <p class="copyright">© 2024 Web Docs</p>
+      </div>
+    </nav>
+
+    <main id="main-doc" class="main-doc">
+      <div class="container">
+        <section class="main-section" id="HTML_Basics">
+          <header class="section-header">
+            <h2><span class="icon"><i class="fab fa-html5"></i></span> HTML Basics</h2>
+            <div class="section-badge">Fundamental</div>
+          </header>
+          <p>HTML (HyperText Markup Language) reprezintă limbajul standard de marcare pentru crearea paginilor web și a aplicațiilor web.</p>
+          <p>Elementele HTML definesc structura și conținutul documentului, cum ar fi titluri, paragrafe, liste, imagini și link-uri.</p>
+          
+          <h3>Structura de bază HTML5</h3>
+          <div class="code-container">
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="ro"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Titlul paginii&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Titlu principal&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;p&gt;Conținutul principal&lt;/p&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;
+        &lt;p&gt;Footer&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          </div>
+          
+          <h3>Elemente semantice HTML5</h3>
+          <ul class="feature-list">
+            <li><strong>&lt;header&gt;</strong> - Antetul documentului sau secțiunii</li>
+            <li><strong>&lt;nav&gt;</strong> - Secțiune de navigare</li>
+            <li><strong>&lt;main&gt;</strong> - Conținutul principal unic al documentului</li>
+            <li><strong>&lt;section&gt;</strong> - Secțiune tematică de conținut</li>
+            <li><strong>&lt;article&gt;</strong> - Conținut independent, auto-suficient</li>
+            <li><strong>&lt;aside&gt;</strong> - Conținut tangențial sau sidebar</li>
+            <li><strong>&lt;footer&gt;</strong> - Subsolul documentului sau secțiunii</li>
+          </ul>
+          
+          <div class="tip">
+            <i class="fas fa-lightbulb"></i>
+            <p><strong>Sfat:</strong> Utilizați elementele semantice pentru a îmbunătăți accesibilitatea și SEO-ul site-ului.</p>
+          </div>
+        </section>
+
+        <section class="main-section" id="CSS_Styling">
+          <header class="section-header">
+            <h2><span class="icon"><i class="fab fa-css3-alt"></i></span> CSS Styling</h2>
+            <div class="section-badge">Design</div>
+          </header>
+          <p>CSS (Cascading Style Sheets) permite stilizarea elementelor HTML prin culori, fonturi, layout-uri și animații.</p>
+          
+          <h3>Metode de includere CSS</h3>
+          <div class="code-container">
+            <pre><code>/* 1. CSS extern (recomandat) */
+&lt;link rel="stylesheet" href="styles.css"&gt;
+
+/* 2. CSS intern */
+&lt;style&gt;
+    body { font-family: Arial, sans-serif; }
+&lt;/style&gt;
+
+/* 3. CSS inline */
+&lt;h1 style="color: blue;"&gt;Titlu&lt;/h1&gt;</code></pre>
+          </div>
+          
+          <h3>Selectori CSS</h3>
+          <div class="code-container">
+            <pre><code>/* Selector de element */
+p { color: #333; }
+
+/* Selector de clasă */
+.button { background: blue; }
+
+/* Selector de ID */
+#header { height: 80px; }
+
+/* Selector de atribut */
+input[type="text"] { border: 1px solid #ccc; }
+
+/* Pseudo-clase */
+a:hover { color: red; }
+li:nth-child(odd) { background: #f5f5f5; }</code></pre>
+          </div>
+          
+          <h3>Flexbox Layout</h3>
+          <div class="code-container">
+            <pre><code>.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.item {
+    flex: 1;
+    padding: 20px;
+}</code></pre>
+          </div>
+        </section>
+
+        <section class="main-section" id="JavaScript_și_Java">
+          <header class="section-header">
+            <h2><span class="icon"><i class="fab fa-js-square"></i></span> JavaScript & Java</h2>
+            <div class="section-badge">Programare</div>
+          </header>
+          <p><strong>JavaScript</strong> este un limbaj de scripting folosit pentru dinamica paginilor web, rulând direct în browser.</p>
+          <p><strong>Java</strong> este un limbaj de programare orientat pe obiecte, folosit pentru aplicații complexe și backend, care rulează în JVM (Java Virtual Machine).</p>
+          
+          <h3>JavaScript vs Java</h3>
+          <div class="comparison-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Caracteristică</th>
+                  <th>JavaScript</th>
+                  <th>Java</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Tipizare</td>
+                  <td>Dinamică</td>
+                  <td>Statică</td>
+                </tr>
+                <tr>
+                  <td>Execuție</td>
+                  <td>În browser</td>
+                  <td>În JVM</td>
+                </tr>
+                <tr>
+                  <td>Paradigmă</td>
+                  <td>Multi-paradigmă</td>
+                  <td>OOP-first</td>
+                </tr>
+                <tr>
+                  <td>Compilare</td>
+                  <td>Interpretat</td>
+                  <td>Compilat</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          <h3>Exemplu JavaScript</h3>
+          <div class="code-container">
+            <pre><code>// Manipulare DOM
+document.getElementById('btn').addEventListener('click', function() {
+    const element = document.querySelector('.content');
+    element.style.backgroundColor = '#f0f0f0';
+    element.textContent = 'Buton apăsat!';
+});
+
+// Funcție modernă cu arrow function
+const sum = (a, b) => a + b;
+console.log(sum(5, 3)); // 8
+
+// Manipulare array-uri
+const numbers = [1, 2, 3, 4];
+const doubled = numbers.map(num => num * 2);
+// doubled = [2, 4, 6, 8]</code></pre>
+          </div>
+        </section>
+
+        <section class="main-section" id="Responsive_Design">
+          <header class="section-header">
+            <h2><span class="icon"><i class="fas fa-mobile-alt"></i></span> Responsive Design</h2>
+            <div class="section-badge">UI/UX</div>
+          </header>
+          <p>Designul responsiv ajustează automat aspectul și layout-ul site-ului în funcție de dimensiunea și orientarea ecranului.</p>
+          
+          <h3>Principii cheie</h3>
+          <div class="principles-grid">
+            <div class="principle">
+              <div class="principle-icon">
+                <i class="fas fa-ruler-combined"></i>
+              </div>
+              <h4>Grile fluide</h4>
+              <p>Utilizează procente în loc de pixeli pentru dimensiuni</p>
+            </div>
+            
+            <div class="principle">
+              <div class="principle-icon">
+                <i class="fas fa-compress-alt"></i>
+              </div>
+              <h4>Imagini flexibile</h4>
+              <p>Imagini care se scalează proporțional</p>
+            </div>
+            
+            <div class="principle">
+              <div class="principle-icon">
+                <i class="fas fa-mobile"></i>
+              </div>
+              <h4>Mobile-first</h4>
+              <p>Design pentru dispozitive mobile apoi scalează în sus</p>
+            </div>
+            
+            <div class="principle">
+              <div class="principle-icon">
+                <i class="fas fa-font"></i>
+              </div>
+              <h4>Unități relative</h4>
+              <p>Folosește rem și em pentru dimensiuni de font</p>
+            </div>
+          </div>
+          
+          <h3>CSS Grid Example</h3>
+          <div class="code-container">
+            <pre><code>.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Responsive adjustment */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}</code></pre>
+          </div>
+        </section>
+
+        <section class="main-section" id="Media_Queries">
+          <header class="section-header">
+            <h2><span class="icon"><i class="fas fa-desktop"></i></span> Media Queries</h2>
+            <div class="section-badge">CSS</div>
+          </header>
+          <p>Media Queries permit aplicarea de stiluri CSS în funcție de caracteristicile dispozitivului (lățime, înălțime, orientare, rezoluție).</p>
+          
+          <h3>Puncte de întrerupere comune (breakpoints)</h3>
+          <div class="code-container">
+            <pre><code>/* Dispozitive mobile (portrait) */
+@media (max-width: 575.98px) { /* Stiluri pentru telefoane mici */ }
+
+/* Dispozitive mobile (landscape) */
+@media (min-width: 576px) and (max-width: 767.98px) { /* Telefoane */ }
+
+/* Tablete */
+@media (min-width: 768px) and (max-width: 991.98px) { /* Tablete */ }
+
+/* Desktop */
+@media (min-width: 992px) and (max-width: 1199.98px) { /* Desktop mici */ }
+
+/* Desktop mari */
+@media (min-width: 1200px) { /* Desktop mari */ }
+
+/* Exemplu practic */
+.container {
+    width: 100%;
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}</code></pre>
+          </div>
+          
+          <h3>Orientation și alte caracteristici</h3>
+          <div class="code-container">
+            <pre><code>/* Orientare landscape */
+@media (orientation: landscape) {
+    .header { height: 60px; }
+}
+
+/* Orientare portrait */
+@media (orientation: portrait) {
+    .header { height: 80px; }
+}
+
+/* Rezoluție înaltă (retina) */
+@media (-webkit-min-device-pixel-ratio: 2), 
+       (min-resolution: 192dpi) {
+    .logo { background-image: url('logo@2x.png'); }
+}
+
+/* Mod întunecat al sistemului */
+@media (prefers-color-scheme: dark) {
+    body { background: #121212; color: #fff; }
+}
+
+/* Reducere mișcare (accessibility) */
+@media (prefers-reduced-motion: reduce) {
+    * { animation-duration: 0.01ms !important; }
+}</code></pre>
+          </div>
+        </section>
+
+        <section class="main-section" id="Best_Practices">
+          <header class="section-header">
+            <h2><span class="icon"><i class="fas fa-star"></i></span> Best Practices</h2>
+            <div class="section-badge">Recomandări</div>
+          </header>
+          
+          <h3>Accesibilitate (A11y)</h3>
+          <ul class="best-practices">
+            <li><i class="fas fa-check-circle"></i> Folosește tag-uri semantice HTML5</li>
+            <li><i class="fas fa-check-circle"></i> Adaugă texte alternative pentru imagini (alt text)</li>
+            <li><i class="fas fa-check-circle"></i> Asigură contrast suficient între text și fundal</li>
+            <li><i class="fas fa-check-circle"></i> Permite navigarea cu tastatura</li>
+            <li><i class="fas fa-check-circle"></i> Utilizează ARIA labels când este necesar</li>
+          </ul>
+          
+          <h3>Performanță</h3>
+          <ul class="best-practices">
+            <li><i class="fas fa-check-circle"></i> Minimizează fișierele CSS și JavaScript</li>
+            <li><i class="fas fa-check-circle"></i> Compresează imaginile</li>
+            <li><i class="fas fa-check-circle"></i> Folosește lazy loading pentru imagini</li>
+            <li><i class="fas fa-check-circle"></i> Implementează caching</li>
+            <li><i class="fas fa-check-circle"></i> Redu numărul de request-uri HTTP</li>
+          </ul>
+          
+          <h3>SEO</h3>
+          <ul class="best-practices">
+            <li><i class="fas fa-check-circle"></i> Folosește structură corectă de heading-uri (h1-h6)</li>
+            <li><i class="fas fa-check-circle"></i> Adaugă meta tag-uri descriptive</li>
+            <li><i class="fas fa-check-circle"></i> Creează URL-uri semantice</li>
+            <li><i class="fas fa-check-circle"></i> Asigură încărcare rapidă a paginii</li>
+            <li><i class="fas fa-check-circle"></i> Creează sitemap.xml și robots.txt</li>
+          </ul>
+          
+          <div class="warning">
+            <i class="fas fa-exclamation-triangle"></i>
+            <p><strong>Atenție:</strong> Testează întotdeauna site-ul pe diferite dispozitive și browsere pentru a te asigura că funcționează corect pentru toți utilizatorii.</p>
+          </div>
+        </section>
+      </div>
+      
+      <footer class="main-footer">
+        <div class="footer-content">
+          <p>Documentație creată cu <i class="fas fa-heart"></i> pentru dezvoltatorii web</p>
+          <div class="footer-links">
+            <a href="#"><i class="fab fa-github"></i> GitHub</a>
+            <a href="#"><i class="fas fa-code"></i> Exemple</a>
+            <a href="#"><i class="fas fa-book"></i> Resurse</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
