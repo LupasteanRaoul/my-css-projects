@@ -1,0 +1,25 @@
+
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "noImplicitAny": false,
+    "baseUrl": ".",
+    "paths": {
+      "react": ["https://esm.sh/react@^19.2.4"],
+      "react-dom/client": ["https://esm.sh/react-dom@^19.2.4/client"],
+      "@google/genai": ["https://esm.sh/@google/genai@^1.40.0"]
+    },
+    "types": []
+  },
+  "include": ["**/*.ts", "**/*.tsx", "global.d.ts"]
+}

@@ -1,13 +1,18 @@
-# Exclude proiectul landing page (dacă este în acest folder)
-build-a-product-landing-page/
-
-# Exclude fișierele sistem/editor
-.DS_Store
+# Node.js
 node_modules/
-*.log
-.env
+technova-premium-landing/node_modules/
+technova-premium-landing/dist/
 
-# Opțional: exclude fișierele din rădăcină dacă vrei DOAR folderele
-# index.html
-# styles.css
-# script.js
+# Environment
+.env
+.env.local
+
+# System
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

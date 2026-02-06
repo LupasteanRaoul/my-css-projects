@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CSS Showcase - Portofoliu profesional de proiecte web development cu HTML, CSS și JavaScript">
+    <meta name="description" content="CSS Showcase - Portofoliu profesional de proiecte web development cu HTML, CSS, JavaScript, React și TypeScript">
     <meta name="author" content="Lupastean Raoul">
     <title>CSS Showcase | Web Development Portfolio</title>
     <link rel="stylesheet" href="styles.css">
@@ -42,19 +42,19 @@
                     <span class="title-line">CSS Showcase</span>
                     <span class="title-line">Web Development</span>
                 </h1>
-                <p class="hero-subtitle">Portofoliu profesional de proiecte web - HTML, CSS & JavaScript</p>
+                <p class="hero-subtitle">Portofoliu profesional de proiecte web - HTML, CSS, JavaScript, React & TypeScript</p>
                 <div class="hero-stats">
                     <div class="stat-item">
                         <span class="stat-number" data-target="6">0</span>
                         <span class="stat-label">Proiecte</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number" data-target="100">0</span>
-                        <span class="stat-label">% Responsive</span>
+                        <span class="stat-number" data-target="5">0</span>
+                        <span class="stat-label">Tehnologii</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number" data-target="3">0</span>
-                        <span class="stat-label">Tehnologii</span>
+                        <span class="stat-number" data-target="100">0</span>
+                        <span class="stat-label">% Responsive</span>
                     </div>
                 </div>
                 <div class="hero-cta">
@@ -76,24 +76,36 @@
                             <span class="control-dot yellow"></span>
                             <span class="control-dot green"></span>
                         </div>
-                        <span class="window-title">showcase.css</span>
+                        <span class="window-title">portfolio.jsx</span>
                     </div>
                     <div class="window-content">
-                        <pre><code><span class="code-selector">.portfolio</span> {
-  <span class="code-property">display</span>: <span class="code-value">flex</span>;
-  <span class="code-property">flex-direction</span>: <span class="code-value">column</span>;
-  <span class="code-property">gap</span>: <span class="code-value">2rem</span>;
-  <span class="code-property">animation</span>: <span class="code-value">fadeIn 0.8s ease</span>;
-}
-
-<span class="code-selector">.project</span> {
-  <span class="code-property">transition</span>: <span class="code-value">transform 0.3s</span>;
-  <span class="code-property">cursor</span>: <span class="code-value">pointer</span>;
-}
-
-<span class="code-selector">.project:hover</span> {
-  <span class="code-property">transform</span>: <span class="code-value">translateY(-8px)</span>;
-}</code></pre>
+                        <pre><code><span class="code-comment">// 6 Proiecte Web Development</span>
+<span class="code-keyword">const</span> <span class="code-variable">projects</span> = [
+  {
+    <span class="code-property">name</span>: <span class="code-string">"Cafe Menu"</span>,
+    <span class="code-property">tech</span>: [<span class="code-string">"HTML"</span>, <span class="code-string">"CSS"</span>]
+  },
+  {
+    <span class="code-property">name</span>: <span class="code-string">"Book Inventory"</span>,
+    <span class="code-property">tech</span>: [<span class="code-string">"JS"</span>, <span class="code-string">"LocalStorage"</span>]
+  },
+  {
+    <span class="code-property">name</span>: <span class="code-string">"TechNova AI"</span>,
+    <span class="code-property">tech</span>: [<span class="code-string">"React"</span>, <span class="code-string">"TypeScript"</span>]
+  },
+  {
+    <span class="code-property">name</span>: <span class="code-string">"Contact Form"</span>,
+    <span class="code-property">tech</span>: [<span class="code-string">"Form Validation"</span>]
+  },
+  {
+    <span class="code-property">name</span>: <span class="code-string">"Portfolio"</span>,
+    <span class="code-property">tech</span>: [<span class="code-string">"Responsive"</span>]
+  },
+  {
+    <span class="code-property">name</span>: <span class="code-string">"Docs"</span>,
+    <span class="code-property">tech</span>: [<span class="code-string">"Technical Writing"</span>]
+  }
+];</code></pre>
                     </div>
                 </div>
             </div>
@@ -109,7 +121,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Proiecte Realizate</h2>
-                <p class="section-description">Colecție de proiecte web development care demonstrează abilități în HTML5, CSS3 și JavaScript</p>
+                <p class="section-description">Colecție de 6 proiecte web development care demonstrează abilități în HTML5, CSS3, JavaScript și React</p>
             </div>
 
             <div class="filter-buttons">
@@ -117,6 +129,7 @@
                 <button class="filter-btn" data-filter="ui">UI/UX</button>
                 <button class="filter-btn" data-filter="interactive">Interactive</button>
                 <button class="filter-btn" data-filter="responsive">Responsive</button>
+                <button class="filter-btn" data-filter="react">React</button>
             </div>
 
             <div class="projects-grid">
@@ -185,17 +198,18 @@
                     </div>
                 </article>
 
-                <!-- Project 3: Product Landing Page -->
-                <article class="project-card" data-category="ui responsive" data-testid="project-landing-page">
+                <!-- Project 3: TechNova Premium Landing -->
+                <article class="project-card highlight" data-category="react interactive responsive" data-testid="project-technova">
+                    <div class="project-badge">Nou</div>
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="Product Landing Page" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&h=600&fit=crop&q=80" alt="TechNova Premium Landing" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="build-a-product-landing-page/index.html" target="_blank" class="project-link" data-testid="landing-page-live-link">
+                                <a href="technova-premium-landing/index.html" target="_blank" class="project-link" data-testid="technova-live-link">
                                     <i class="fas fa-external-link-alt"></i>
                                     <span>Live Demo</span>
                                 </a>
-                                <a href="https://github.com/LupasteanRaoul/my-css-projects/tree/main/build-a-product-landing-page" target="_blank" class="project-link" data-testid="landing-page-github-link">
+                                <a href="https://github.com/LupasteanRaoul/my-css-projects/tree/main/technova-premium-landing" target="_blank" class="project-link" data-testid="technova-github-link">
                                     <i class="fab fa-github"></i>
                                     <span>Cod Sursă</span>
                                 </a>
@@ -203,17 +217,18 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Product Landing Page</h3>
-                        <p class="project-description">Landing page modern pentru produs cu secțiuni hero, features, pricing și contact. Design responsive optimizat pentru conversie și experiență utilizator.</p>
+                        <h3 class="project-title">TechNova Premium Landing</h3>
+                        <p class="project-description">Aplicație React modernă cu integrare AI și design premium. Construită cu TypeScript, Vite și Tailwind CSS. Include chatbot AI și componente interactive.</p>
                         <div class="project-tech">
                             <span class="tech-tag">React</span>
                             <span class="tech-tag">TypeScript</span>
-                            <span class="tech-tag">CSS3</span>
                             <span class="tech-tag">Vite</span>
+                            <span class="tech-tag">Tailwind</span>
+                            <span class="tech-tag">AI</span>
                         </div>
                         <div class="project-meta">
                             <span class="meta-item"><i class="fas fa-calendar"></i> 2024</span>
-                            <span class="meta-item"><i class="fas fa-rocket"></i> Landing Page</span>
+                            <span class="meta-item"><i class="fas fa-star"></i> Premium</span>
                         </div>
                     </div>
                 </article>
@@ -326,31 +341,31 @@
             <div class="about-content">
                 <div class="about-text">
                     <h2 class="section-title">Despre Proiecte</h2>
-                    <p class="about-description">Această colecție de proiecte demonstrează competențe solide în dezvoltarea web front-end, cu focus pe:</p>
+                    <p class="about-description">Această colecție de 6 proiecte demonstrează competențe solide în dezvoltarea web front-end și full-stack, cu focus pe:</p>
                     <ul class="about-list">
                         <li>
                             <i class="fas fa-check-circle"></i>
-                            <span><strong>HTML5 Semantic:</strong> Utilizarea corectă a tag-urilor semantice pentru structură optimă</span>
+                            <span><strong>HTML5 Semantic:</strong> Utilizarea corectă a tag-urilor semantice pentru structură optimă și accesibilitate</span>
                         </li>
                         <li>
                             <i class="fas fa-check-circle"></i>
-                            <span><strong>CSS3 Modern:</strong> Flexbox, Grid, Animații, și Responsive Design</span>
+                            <span><strong>CSS3 Modern:</strong> Flexbox, Grid, Animații, Variabile CSS și Responsive Design</span>
                         </li>
                         <li>
                             <i class="fas fa-check-circle"></i>
-                            <span><strong>JavaScript Vanilla:</strong> Manipulare DOM, Event Handling, și LocalStorage</span>
+                            <span><strong>JavaScript ES6+:</strong> Manipulare DOM, Async/Await, LocalStorage, API Integration</span>
                         </li>
                         <li>
                             <i class="fas fa-check-circle"></i>
-                            <span><strong>Responsive Design:</strong> Mobile-first approach cu breakpoints optimizate</span>
+                            <span><strong>React & TypeScript:</strong> Component-based architecture, Type Safety, State Management cu Hooks</span>
                         </li>
                         <li>
                             <i class="fas fa-check-circle"></i>
-                            <span><strong>Best Practices:</strong> Cod curat, comentat și ușor de întreținut</span>
+                            <span><strong>Responsive Design:</strong> Mobile-first approach cu breakpoints optimizate pentru toate dispozitivele</span>
                         </li>
                         <li>
                             <i class="fas fa-check-circle"></i>
-                            <span><strong>Performance:</strong> Optimizare pentru încărcare rapidă și experiență fluidă</span>
+                            <span><strong>Build Tools:</strong> Vite pentru development rapid, TypeScript pentru code quality</span>
                         </li>
                     </ul>
                 </div>
@@ -374,6 +389,10 @@
                                 <i class="fab fa-react"></i>
                                 <span>React</span>
                             </div>
+                            <div class="skill-item">
+                                <i class="fab fa-node-js"></i>
+                                <span>TypeScript</span>
+                            </div>
                         </div>
                     </div>
                     <div class="skill-category">
@@ -394,6 +413,10 @@
                             <div class="skill-item">
                                 <i class="fas fa-code"></i>
                                 <span>VS Code</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-bolt"></i>
+                                <span>Vite</span>
                             </div>
                         </div>
                     </div>
@@ -439,6 +462,23 @@
                         </div>
                     </div>
                 </div>
+                <div class="contact-links">
+                    <p class="contact-note"><strong>Toate proiectele sunt live și accesibile:</strong></p>
+                    <div class="project-links-mini">
+                        <a href="https://lupasteanraoul.github.io/my-css-projects/technova-premium-landing/" target="_blank" class="mini-link">
+                            <i class="fas fa-rocket"></i> TechNova AI
+                        </a>
+                        <a href="https://lupasteanraoul.github.io/my-css-projects/book-inventory-app/" target="_blank" class="mini-link">
+                            <i class="fas fa-book"></i> Book App
+                        </a>
+                        <a href="https://lupasteanraoul.github.io/my-css-projects/design-a-contact-form/" target="_blank" class="mini-link">
+                            <i class="fas fa-envelope"></i> Contact Form
+                        </a>
+                        <a href="https://lupasteanraoul.github.io/my-css-projects/personal-portfolio/" target="_blank" class="mini-link">
+                            <i class="fas fa-user"></i> Portfolio
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -452,9 +492,17 @@
                     <span>CSS Showcase</span>
                 </div>
                 <p class="footer-text">© 2024 Lupastean Raoul. Toate drepturile rezervate.</p>
+                <div class="footer-stats">
+                    <span class="stat"><i class="fas fa-project-diagram"></i> 6 Proiecte</span>
+                    <span class="stat"><i class="fas fa-laptop-code"></i> 5 Tehnologii</span>
+                    <span class="stat"><i class="fas fa-mobile-alt"></i> 100% Responsive</span>
+                </div>
                 <div class="footer-links">
                     <a href="https://github.com/LupasteanRaoul/my-css-projects" target="_blank" class="footer-link">
                         <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://lupasteanraoul.github.io/my-css-projects/" target="_blank" class="footer-link">
+                        <i class="fas fa-external-link-alt"></i>
                     </a>
                 </div>
             </div>

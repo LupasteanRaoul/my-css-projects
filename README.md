@@ -4,163 +4,109 @@
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
-## 📋 Despre Proiect
+## 📋 About the Project
 
-**CSS Showcase** este un portofoliu profesional care prezintă o colecție de proiecte web development, demonstrând competențe solide în HTML5, CSS3 și JavaScript. Fiecare proiect este implementat cu atenție la detalii, responsive design și best practices moderne.
+**CSS Showcase** is a professional portfolio showcasing a collection of 6 web development projects, demonstrating strong skills in HTML5, CSS3, JavaScript, React, and TypeScript. Each project is implemented with attention to detail, responsive design, and modern best practices.
 
 🌐 **Live Demo:** [lupasteanraoul.github.io/my-css-projects](https://lupasteanraoul.github.io/my-css-projects/)
 
 ---
 
-## 🎯 Proiecte Incluse
+## 🎯 Projects Overview
 
-### 1. 🍵 Design Cafe Menu
-**Descriere:** Meniu de cafenea elegant și responsive cu design modern, prezentând cafea și deserturi într-un layout profesional.
+### 1. 🍵 Cafe Menu Design
+**Description:** Elegant and responsive cafe menu with modern design, showcasing coffee and desserts in a professional layout.
 
-**Tehnologii:** HTML5, CSS3, Responsive Design
-
-**Caracteristici:**
-- Design modern și atractiv
-- Layout responsive pentru toate dispozitivele
-- Structură semantică HTML5
-- Animații subtile CSS3
-
-🔗 **[Live Demo](https://lupasteanraoul.github.io/my-css-projects/Design-a-Cafe-Menu/index.html)** | **[Cod Sursă](https://github.com/LupasteanRaoul/my-css-projects/tree/main/Design-a-Cafe-Menu)**
-
----
+**Technologies:** HTML5, CSS3, Responsive Design  
+**Features:** Modern design, responsive layout, semantic HTML5, CSS animations  
+🔗 **[Live Demo](https://lupasteanraoul.github.io/my-css-projects/Design-a-Cafe-Menu/)** | **[Source Code](https://github.com/LupasteanRaoul/my-css-projects/tree/main/Design-a-Cafe-Menu)**
 
 ### 2. 📚 Book Inventory App
-**Descriere:** Aplicație interactivă pentru gestionarea inventarului de cărți cu funcționalități CRUD complete.
+**Description:** Interactive book inventory management application with full CRUD functionality and local storage.
 
-**Tehnologii:** HTML5, CSS3, JavaScript, LocalStorage
+**Technologies:** HTML5, CSS3, JavaScript, LocalStorage  
+**Features:** Add/edit/delete books, real-time validation, search/filter, data persistence  
+🔗 **[Live Demo](https://lupasteanraoul.github.io/my-css-projects/book-inventory-app/)** | **[Source Code](https://github.com/LupasteanRaoul/my-css-projects/tree/main/book-inventory-app)**
 
-**Caracteristici:**
-- Adăugare, editare și ștergere cărți
-- Validare formular în timp real
-- Persistență date cu LocalStorage
-- Interface user-friendly cu feedback vizual
-- Search și filtare
+### 3. ⚡ TechNova Premium Landing (NEW!)
+**Description:** Modern React landing page with AI integration and premium design, built with TypeScript and Vite.
 
-🔗 **[Live Demo](https://lupasteanraoul.github.io/my-css-projects/book-inventory-app/index.html)** | **[Cod Sursă](https://github.com/LupasteanRaoul/my-css-projects/tree/main/book-inventory-app)**
-
----
-
-### 3. 🚀 Product Landing Page
-**Descriere:** Landing page modern pentru produs cu secțiuni hero, features, pricing și contact, optimizat pentru conversie.
-
-**Tehnologii:** React, TypeScript, CSS3, Vite
-
-**Caracteristici:**
-- React cu TypeScript pentru type safety
-- Component-based architecture
-- Responsive design cu mobile-first approach
-- Animații și tranziții fluide
-- Optimizat pentru SEO
-- Build tool modern cu Vite
-
-🔗 **[Live Demo](https://lupasteanraoul.github.io/my-css-projects/build-a-product-landing-page/index.html)** | **[Cod Sursă](https://github.com/LupasteanRaoul/my-css-projects/tree/main/build-a-product-landing-page)**
-
----
+**Technologies:** React, TypeScript, Vite, Tailwind CSS, Google Gemini AI  
+**Features:** React components, TypeScript safety, AI chatbot, responsive design, animations  
+🔗 **[Live Demo](https://lupasteanraoul.github.io/my-css-projects/technova-premium-landing/)** | **[Source Code](https://github.com/LupasteanRaoul/my-css-projects/tree/main/technova-premium-landing)**
 
 ### 4. ✉️ Contact Form Design
-**Descriere:** Formular de contact elegant cu validare în timp real și feedback vizual pentru utilizatori.
+**Description:** Elegant contact form with real-time validation and visual feedback for users.
 
-**Tehnologii:** HTML5, CSS3, JavaScript, Form Validation
-
-**Caracteristici:**
-- Validare email cu regex
-- Verificare în timp real
-- Mesaje de eroare personalizate
-- Animații de feedback
-- Design responsive
-- Accessible (ARIA labels)
-
-🔗 **[Live Demo](https://lupasteanraoul.github.io/my-css-projects/design-a-contact-form/index.html)** | **[Cod Sursă](https://github.com/LupasteanRaoul/my-css-projects/tree/main/design-a-contact-form)**
-
----
+**Technologies:** HTML5, CSS3, JavaScript, Form Validation  
+**Features:** Email validation, real-time feedback, animations, responsive design  
+🔗 **[Live Demo](https://lupasteanraoul.github.io/my-css-projects/design-a-contact-form/)** | **[Source Code](https://github.com/LupasteanRaoul/my-css-projects/tree/main/design-a-contact-form)**
 
 ### 5. 👤 Personal Portfolio
-**Descriere:** Website portfolio personal cu secțiuni despre, proiecte, abilități și contact pentru prezentarea profilului profesional.
+**Description:** Personal portfolio website with about, projects, skills, and contact sections.
 
-**Tehnologii:** HTML5, CSS3, JavaScript, Smooth Scroll
+**Technologies:** HTML5, CSS3, JavaScript, Smooth Scroll  
+**Features:** Modern design, multiple sections, smooth scrolling, project gallery  
+🔗 **[Live Demo](https://lupasteanraoul.github.io/my-css-projects/personal-portfolio/)** | **[Source Code](https://github.com/LupasteanRaoul/my-css-projects/tree/main/personal-portfolio)**
 
-**Caracteristici:**
-- Design modern și profesional
-- Secțiuni multiple (About, Projects, Skills, Contact)
-- Smooth scrolling navigation
-- Animații la scroll
-- Gallery de proiecte
-- Contact section cu social links
+### 6. 📖 Technical Documentation
+**Description:** Technical documentation page with fixed navigation and syntax highlighting.
 
-🔗 **[Live Demo](https://lupasteanraoul.github.io/my-css-projects/personal-portfolio/index.html)** | **[Cod Sursă](https://github.com/LupasteanRaoul/my-css-projects/tree/main/personal-portfolio)**
-
----
-
-### 6. 📖 Technical Documentation Page
-**Descriere:** Pagină de documentație tehnică cu navigare fixă, syntax highlighting și structură clară pentru documentare eficientă.
-
-**Tehnologii:** HTML5, CSS3, JavaScript, Documentation Layout
-
-**Caracteristici:**
-- Fixed sidebar navigation
-- Syntax highlighting pentru code blocks
-- Structură ierarhică clară
-- Responsive layout cu collapsible sidebar
-- Smooth scroll to sections
-- Search functionality
-- Print-friendly styling
-
-🔗 **[Live Demo](https://lupasteanraoul.github.io/my-css-projects/technical-documentation-page/index.html)** | **[Cod Sursă](https://github.com/LupasteanRaoul/my-css-projects/tree/main/technical-documentation-page)**
+**Technologies:** HTML5, CSS3, JavaScript, Documentation Layout  
+**Features:** Fixed sidebar, syntax highlighting, responsive layout, search functionality  
+🔗 **[Live Demo](https://lupasteanraoul.github.io/my-css-projects/technical-documentation-page/)** | **[Source Code](https://github.com/LupasteanRaoul/my-css-projects/tree/main/technical-documentation-page)**
 
 ---
 
-## 🛠️ Tehnologii Utilizate
+## 🚀 Tech Stack
 
-### Frontend Core
-- **HTML5** - Structură semantică modernă
-- **CSS3** - Styling avansat cu Flexbox & Grid
-- **JavaScript (ES6+)** - Funcționalități interactive
+### Frontend
+- **HTML5** - Semantic markup, accessibility
+- **CSS3** - Flexbox, Grid, Animations, Variables
+- **JavaScript** - ES6+, DOM manipulation, LocalStorage
+- **React** - Component-based architecture, Hooks
+- **TypeScript** - Type safety, better development experience
+- **Vite** - Fast build tool and development server
 
-### Framework & Tools
-- **React** - Library pentru UI componentizat
-- **TypeScript** - Type-safe JavaScript
-- **Vite** - Build tool rapid și modern
-
-### Design & UX
+### Styling & Design
+- **Tailwind CSS** - Utility-first CSS framework (TechNova)
+- **CSS Grid & Flexbox** - Modern layout systems
 - **Responsive Design** - Mobile-first approach
-- **CSS Animations** - Tranziții și efecte fluide
-- **Font Awesome** - Icon library
 - **Google Fonts** - IBM Plex Sans & IBM Plex Mono
+- **Font Awesome** - Icon library
 
-### Browser APIs
-- **LocalStorage** - Persistență date client-side
-- **Intersection Observer** - Scroll animations
-- **Form Validation API** - Validare formulare native
+### Tools & Deployment
+- **Git & GitHub** - Version control and collaboration
+- **GitHub Pages** - Static site hosting
+- **GitHub Actions** - Automated deployment workflow
+- **VS Code** - Development environment
 
 ---
 
-## 📁 Structura Proiectului
+## 📁 Project Structure
 
 ```
 my-css-projects/
-├── index.html                          # Pagina principală portfolio
-├── styles.css                          # Styling global portfolio
-├── script.js                           # JavaScript portfolio
-├── README.md                           # Documentație completă
+├── index.html                    # Main portfolio landing page
+├── styles.css                    # Global portfolio styles
+├── script.js                     # Portfolio JavaScript
+├── README.md                     # Documentation
+├── LICENSE                       # MIT License
+├── .github/workflows/           # GitHub Actions for deployment
 │
-├── Design-a-Cafe-Menu/                # Proiect 1: Cafe Menu
+├── Design-a-Cafe-Menu/          # Project 1: Cafe Menu
+│   ├── index.html
+│   └── styles.css
+│
+├── book-inventory-app/          # Project 2: Book Inventory
 │   ├── index.html
 │   ├── styles.css
-│   └── README.md
+│   └── script.js
 │
-├── book-inventory-app/                # Proiect 2: Book Inventory
-│   ├── index.html
-│   ├── styles.css
-│   ├── script.js
-│   └── README.md (implicit)
-│
-├── build-a-product-landing-page/     # Proiect 3: Landing Page
+├── technova-premium-landing/    # Project 3: React Landing Page
 │   ├── index.html
 │   ├── styles.css
 │   ├── package.json
@@ -173,336 +119,184 @@ my-css-projects/
 │   │   ├── Features.tsx
 │   │   ├── Pricing.tsx
 │   │   ├── Contact.tsx
+│   │   ├── AIAssistant.tsx
 │   │   └── Footer.tsx
 │   └── README.md
 │
-├── design-a-contact-form/            # Proiect 4: Contact Form
-│   ├── index.html
-│   ├── styles.css
-│   ├── script.js
-│   └── README.md
-│
-├── personal-portfolio/               # Proiect 5: Personal Portfolio
+├── design-a-contact-form/       # Project 4: Contact Form
 │   ├── index.html
 │   ├── styles.css
 │   └── script.js
 │
-└── technical-documentation-page/    # Proiect 6: Documentation
+├── personal-portfolio/          # Project 5: Personal Portfolio
+│   ├── index.html
+│   ├── styles.css
+│   └── script.js
+│
+└── technical-documentation-page/# Project 6: Documentation
     ├── index.html
     ├── styles.css
-    ├── script.js
-    └── README.md
+    └── script.js
 ```
 
 ---
 
-## 🚀 Utilizare și Instalare
+## 🚦 Getting Started
 
-### Vizualizare Live (Recomandat)
+### Prerequisites
+- Web browser (Chrome, Firefox, Safari, Edge)
+- Code editor (VS Code recommended)
+- Git for version control
+- Node.js (for TechNova project)
 
-Cel mai simplu mod de a vedea proiectele este prin GitHub Pages:
+### Local Development
 
-🌐 **[Vizitează Portfolio-ul Live](https://lupasteanraoul.github.io/my-css-projects/)**
-
-### Instalare Locală
-
-#### Metoda 1: Clone și Deschide (Proiecte Simple)
-
+1. **Clone the repository**
 ```bash
-# 1. Clonează repository-ul
 git clone https://github.com/LupasteanRaoul/my-css-projects.git
-
-# 2. Navighează în folder
 cd my-css-projects
-
-# 3. Deschide index.html în browser
-# Windows
-start index.html
-
-# macOS
-open index.html
-
-# Linux
-xdg-open index.html
 ```
 
-#### Metoda 2: Cu Live Server (Recomandat pentru Development)
-
+2. **Open the main portfolio**
+Simply open `index.html` in your browser or use a local server:
 ```bash
-# 1. Clonează repository-ul
-git clone https://github.com/LupasteanRaoul/my-css-projects.git
+# Using Python
+python -m http.server 8000
 
-# 2. Navighează în folder
-cd my-css-projects
-
-# 3. Instalează Live Server (dacă nu ai deja)
-npm install -g live-server
-
-# 4. Pornește server local
-live-server
+# Using Node.js
+npx serve .
 ```
 
-#### Metoda 3: Pentru Proiectul React (Product Landing Page)
-
+3. **Run TechNova React project**
 ```bash
-# 1. Navighează în folder-ul proiectului React
-cd build-a-product-landing-page
-
-# 2. Instalează dependencies
+cd technova-premium-landing
 npm install
-
-# 3. Pornește development server
 npm run dev
-
-# Proiectul va rula la http://localhost:5173
+# Open http://localhost:5173
 ```
 
----
-
-## 📸 Screenshots
-
-### Portfolio Homepage
-![Portfolio Homepage](https://via.placeholder.com/1200x600/2563eb/ffffff?text=CSS+Showcase+Portfolio)
-
-*Pagina principală cu hero section, prezentare proiecte și filtre interactive*
-
-### Projects Grid
-![Projects Grid](https://via.placeholder.com/1200x600/3b82f6/ffffff?text=Interactive+Projects+Grid)
-
-*Grid responsive cu toate proiectele și hover effects*
-
-### Project Details
-![Project Card](https://via.placeholder.com/600x400/0ea5e9/ffffff?text=Project+Details)
-
-*Detalii proiect cu tehnologii, live demo și GitHub links*
+### GitHub Pages Deployment
+The portfolio is automatically deployed to GitHub Pages when changes are pushed to the main branch. Visit:
+- **Main Portfolio:** https://lupasteanraoul.github.io/my-css-projects/
+- **Individual Projects:** https://lupasteanraoul.github.io/my-css-projects/[project-folder]/
 
 ---
 
-## ✨ Caracteristici Principale
+## ✨ Features
 
-### 🎨 Design Profesional
-- Interface modern și curat
-- Paleta de culori profesională (IBM Corporate Blue)
-- Typography ierarhică cu IBM Plex Sans/Mono
-- Spacing consistent și grid layout
+### 🎨 Professional Design
+- Modern and clean interface with professional color scheme
+- Consistent spacing and typography using IBM Plex fonts
+- Hierarchical information architecture
 
 ### 📱 Fully Responsive
-- Mobile-first approach
-- Breakpoints optimizate (320px, 768px, 1024px, 1280px)
-- Touch-friendly interface pe mobile
-- Collapsible navigation menu
+- Mobile-first approach with optimized breakpoints
+- Touch-friendly interfaces on mobile devices
+- Collapsible navigation for small screens
 
-### ⚡ Performance
-- Lazy loading pentru imagini
-- CSS optimizat cu variabile custom
-- JavaScript modular și lightweight
-- Fast loading times
+### ⚡ Performance Optimized
+- Lazy loading for images and resources
+- Optimized CSS with custom properties
+- Modular JavaScript with efficient DOM manipulation
 
 ### ♿ Accessibility
-- Semantic HTML5
-- ARIA labels unde e necesar
-- Keyboard navigation
-- Focus states vizibile
-- Color contrast WCAG AA compliant
+- Semantic HTML5 structure
+- ARIA labels for screen readers
+- Keyboard navigation support
+- WCAG AA color contrast compliance
 
-### 🎭 Animații și Interactivitate
-- Smooth scroll navigation
-- Hover effects pe cards
-- Counter animations pentru statistici
-- Fade-in animations la scroll
-- Filter animations pentru proiecte
+### 🔧 Interactive Elements
+- Filterable project grid with categories
+- Animated counters and hover effects
+- Smooth scrolling navigation
+- Form validation with user feedback
 
 ---
 
-## 🎓 Competențe Demonstrate
+## 🎓 Skills Demonstrated
 
-### HTML5
-- ✅ Semantic markup (header, nav, section, article, footer)
-- ✅ Meta tags pentru SEO
-- ✅ Accessibility attributes (aria-label, role)
-- ✅ Form elements cu validation
-- ✅ Structured data
-
-### CSS3
-- ✅ Modern layout systems (Flexbox, Grid)
-- ✅ CSS Variables pentru theming
-- ✅ Media queries pentru responsive
-- ✅ Animations și transitions
-- ✅ Pseudo-elements și pseudo-classes
-- ✅ CSS methodology (BEM-like naming)
+### HTML5 & CSS3
+- Semantic markup and proper document structure
+- CSS Grid and Flexbox for complex layouts
+- CSS animations and transitions
+- Responsive design with media queries
+- CSS custom properties for theming
 
 ### JavaScript
-- ✅ DOM manipulation
-- ✅ Event handling
-- ✅ LocalStorage API
-- ✅ Intersection Observer API
-- ✅ Form validation
-- ✅ ES6+ features (arrow functions, template literals, destructuring)
-- ✅ Async operations
+- DOM manipulation and event handling
+- LocalStorage for data persistence
+- Form validation and user feedback
+- ES6+ features (modules, arrow functions, template literals)
 
-### React & TypeScript
-- ✅ Component-based architecture
-- ✅ Props și state management
-- ✅ TypeScript interfaces și types
-- ✅ Hooks (useState, useEffect)
-- ✅ Modern build tools (Vite)
+### React & Modern Development
+- Component-based architecture
+- TypeScript for type safety
+- State management with React Hooks
+- Integration with third-party APIs (Google Gemini AI)
+- Build tools and bundling with Vite
 
-### Best Practices
-- ✅ Clean code principles
-- ✅ Code organization și modularity
-- ✅ Git version control
-- ✅ Documentation
-- ✅ Cross-browser compatibility
-- ✅ Performance optimization
+### Development Practices
+- Clean, commented, and maintainable code
+- Git version control with descriptive commits
+- Cross-browser compatibility
+- Performance optimization techniques
+- Accessibility best practices
 
 ---
 
-## 🌐 Deploy pe GitHub Pages
+## 🌐 Deployment Details
 
-### Setup Inițial
+The portfolio is deployed using **GitHub Pages** with a custom GitHub Actions workflow that:
+1. Builds the React project (TechNova) with Vite
+2. Copies all project builds to a public directory
+3. Deploys everything to GitHub Pages
+4. Provides live URLs for each project
 
-1. **Fork sau Clone Repository-ul**
-```bash
-git clone https://github.com/LupasteanRaoul/my-css-projects.git
-cd my-css-projects
-```
-
-2. **Verifică fișierele**
-```bash
-# Asigură-te că ai:
-# - index.html (homepage)
-# - styles.css
-# - script.js
-# - toate folder-ele cu proiecte
-```
-
-3. **Push pe GitHub**
-```bash
-git add .
-git commit -m "Initial commit - CSS Showcase Portfolio"
-git push origin main
-```
-
-4. **Activează GitHub Pages**
-- Mergi la repository pe GitHub
-- Settings → Pages
-- Source: Deploy from branch
-- Branch: `main` / folder: `root`
-- Save
-
-5. **Verifică Deploy**
-- După ~2-3 minute, site-ul va fi live la:
-- `https://[username].github.io/my-css-projects/`
-
-### Update Proiecte
-
-```bash
-# Fă modificări la proiecte
-git add .
-git commit -m "Update: [descriere modificare]"
-git push origin main
-
-# GitHub Pages va re-deploy automat
-```
+### Live URLs
+- **Portfolio Home:** https://lupasteanraoul.github.io/my-css-projects/
+- **TechNova Landing:** https://lupasteanraoul.github.io/my-css-projects/technova-premium-landing/
+- **All Projects:** Accessible from the main portfolio page
 
 ---
 
-## 🔧 Customizare
+## 📈 Project Stats
 
-### Schimbă Culorile
-Editează variabilele CSS în `styles.css`:
-
-```css
-:root {
-    --primary: #2563eb;        /* Culoare principală */
-    --primary-dark: #1e40af;   /* Culoare hover */
-    --primary-light: #3b82f6;  /* Culoare accente */
-    --text-primary: #0f172a;   /* Text principal */
-    --text-secondary: #475569; /* Text secundar */
-}
-```
-
-### Adaugă un Proiect Nou
-
-1. **Creează folder nou:**
-```bash
-mkdir new-project
-cd new-project
-```
-
-2. **Adaugă fișierele:**
-```
-new-project/
-├── index.html
-├── styles.css
-└── script.js (opțional)
-```
-
-3. **Actualizează `index.html` principal:**
-```html
-<!-- Adaugă în secțiunea .projects-grid -->
-<article class="project-card" data-category="ui responsive">
-    <div class="project-image">
-        <img src="URL_IMAGINE" alt="New Project">
-        <div class="project-overlay">
-            <div class="project-links">
-                <a href="new-project/index.html" class="project-link">
-                    <i class="fas fa-external-link-alt"></i>
-                    <span>Live Demo</span>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="project-content">
-        <h3 class="project-title">New Project</h3>
-        <p class="project-description">Descriere proiect...</p>
-        <div class="project-tech">
-            <span class="tech-tag">HTML5</span>
-            <span class="tech-tag">CSS3</span>
-        </div>
-    </div>
-</article>
-```
-
-4. **Actualizează README.md** cu noul proiect
+- **6 Complete Projects** with diverse functionality
+- **100% Responsive** across all devices and screen sizes
+- **3 Main Technologies** (HTML, CSS, JavaScript) plus React
+- **Professional Design** following modern UI/UX principles
+- **Accessibility Compliant** meeting WCAG AA standards
 
 ---
 
-## 📊 Browser Compatibility
+## 🔮 Future Enhancements
 
-| Browser | Version | Support |
-|---------|---------|---------|
-| Chrome | 90+ | ✅ Full |
-| Firefox | 88+ | ✅ Full |
-| Safari | 14+ | ✅ Full |
-| Edge | 90+ | ✅ Full |
-| Opera | 76+ | ✅ Full |
-
-### Tested On:
-- ✅ Windows 10/11
-- ✅ macOS Big Sur+
-- ✅ iOS 14+
-- ✅ Android 10+
+Planned features and improvements:
+- [ ] Add dark/light mode toggle
+- [ ] Implement project search functionality
+- [ ] Add more React projects
+- [ ] Create project demo videos
+- [ ] Add performance metrics
+- [ ] Implement PWA features
+- [ ] Add multi-language support
 
 ---
 
-## 🤝 Contribuții
+## 🤝 Contributing
 
-Deși acesta este un portfolio personal, sugestiile și feedback-ul sunt binevenite!
+While this is a personal portfolio project, suggestions and feedback are welcome!
 
-### Cum să contribui:
-
-1. Fork repository-ul
-2. Creează un branch pentru feature (`git checkout -b feature/AmazingFeature`)
-3. Commit modificările (`git commit -m 'Add some AmazingFeature'`)
-4. Push pe branch (`git push origin feature/AmazingFeature`)
-5. Deschide un Pull Request
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ---
 
-## 📝 License
+## 📄 License
 
-Acest proiect este open source și disponibil sub [MIT License](LICENSE).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ```
 MIT License
@@ -513,78 +307,36 @@ Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software.
+copies of the Software...
 ```
 
 ---
 
-## 📧 Contact
+## 👨‍💻 Author
 
 **Lupastean Raoul**
-
-- 💼 GitHub: [@LupasteanRaoul](https://github.com/LupasteanRaoul)
-- 🌐 Portfolio: [lupasteanraoul.github.io/my-css-projects](https://lupasteanraoul.github.io/my-css-projects/)
-- 📫 Repository: [github.com/LupasteanRaoul/my-css-projects](https://github.com/LupasteanRaoul/my-css-projects)
+- GitHub: [@LupasteanRaoul](https://github.com/LupasteanRaoul)
+- Portfolio: [CSS Showcase](https://lupasteanraoul.github.io/my-css-projects/)
+- All Projects: [6 Web Development Projects](https://github.com/LupasteanRaoul/my-css-projects)
 
 ---
 
 ## 🙏 Acknowledgments
 
-- **Unsplash** - Pentru imaginile de stock de calitate
-- **Font Awesome** - Pentru biblioteca de iconuri
-- **Google Fonts** - Pentru fonturile IBM Plex Sans și IBM Plex Mono
-- **GitHub Pages** - Pentru hosting gratuit
-
----
-
-## 📈 Statistici Proiect
-
-- 📁 **6 Proiecte** complete și funcționale
-- 💻 **3 Tehnologii** principale (HTML, CSS, JS)
-- 📱 **100% Responsive** pe toate dispozitivele
-- ⚡ **Performance Score** 95+ (Lighthouse)
-- ♿ **Accessibility Score** 100 (WCAG AA)
-
----
-
-## 🔮 Planuri Viitoare
-
-- [ ] Adăugare proiecte noi (Calculator, Weather App)
-- [ ] Implementare dark mode toggle
-- [ ] Integrare blog section
-- [ ] Adăugare testimonials
-- [ ] SEO optimization avansat
-- [ ] Progressive Web App (PWA) features
-- [ ] Multilingual support (EN/RO)
-
----
-
-## 📚 Resources & Learning
-
-Resurse utile pentru cei care vor să învețe web development:
-
-### Documentation
-- [MDN Web Docs](https://developer.mozilla.org/) - HTML, CSS, JavaScript
-- [React Documentation](https://react.dev/) - React official docs
-- [TypeScript Handbook](https://www.typescriptlang.org/docs/) - TypeScript guide
-
-### Tutorials
-- [freeCodeCamp](https://www.freecodecamp.org/) - Free coding bootcamp
-- [CSS-Tricks](https://css-tricks.com/) - CSS tutorials și tricks
-- [JavaScript.info](https://javascript.info/) - Modern JavaScript tutorial
-
-### Tools
-- [Can I Use](https://caniuse.com/) - Browser compatibility checker
-- [ColorHunt](https://colorhunt.co/) - Color palette inspiration
-- [FontPair](https://fontpair.co/) - Font pairing suggestions
+- **FreeCodeCamp** for project inspiration and learning resources
+- **Google Fonts** for the IBM Plex font family
+- **Font Awesome** for the comprehensive icon library
+- **Unsplash** for high-quality stock images
+- **GitHub** for free hosting with GitHub Pages
+- **Vercel** for inspiration in modern deployment practices
 
 ---
 
 <div align="center">
 
-### ⭐ Dacă acest proiect te-a ajutat, lasă un star pe GitHub!
+### ⭐ If you find this portfolio useful, consider giving it a star on GitHub!
 
-**[⬆ Înapoi sus](#css-showcase---web-development-portfolio)**
+**[⬆ Back to Top](#css-showcase---web-development-portfolio)**
 
 Made with ❤️ by Lupastean Raoul
 
