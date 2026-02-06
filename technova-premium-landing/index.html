@@ -1,36 +1,209 @@
-
 <!DOCTYPE html>
-<html lang="ro" class="scroll-smooth">
+<html lang="ro">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TechNova | Viitorul Performanței</title>
-    
-  <!-- Stiluri Personalizate care "ies în evidență" -->
-  <link rel="stylesheet" href="styles.css">
-  
-  <!-- Fonturi Premium -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
-
-  <script type="importmap">
-  {
-    "imports": {
-      "react/": "https://esm.sh/react@^19.2.4/",
-      "react": "https://esm.sh/react@^19.2.4",
-      "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-      "@google/genai": "https://esm.sh/@google/genai@^1.40.0"
-    }
-  }
-  </script>
-<link rel="stylesheet" href="/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚡ TechNova Premium | React + AI Landing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Tailwind-like utilities în CSS */
+        .flex { display: flex; }
+        .items-center { align-items: center; }
+        .justify-center { justify-content: center; }
+        .flex-col { flex-direction: column; }
+        .text-center { text-align: center; }
+        .mx-auto { margin-left: auto; margin-right: auto; }
+        .max-w-4xl { max-width: 72rem; }
+        .p-8 { padding: 2rem; }
+        .p-4 { padding: 1rem; }
+        .mt-4 { margin-top: 1rem; }
+        .mt-8 { margin-top: 2rem; }
+        .mb-4 { margin-bottom: 1rem; }
+        .mb-8 { margin-bottom: 2rem; }
+        .rounded-xl { border-radius: 0.75rem; }
+        .rounded-lg { border-radius: 0.5rem; }
+        .shadow-xl { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
+        .hover\:scale-105:hover { transform: scale(1.05); }
+        .transition-all { transition: all 0.3s ease; }
+    </style>
 </head>
-<body class="bg-[#030712] text-slate-200 antialiased selection:bg-blue-500/30 overflow-x-hidden">
-  <div id="root"></div>
-  
-  <!-- Punctul de intrare JavaScript -->
-  <script type="module" src="index.tsx"></script>
-<script type="module" src="/index.tsx"></script>
+<body>
+    <!-- Background Grid -->
+    <div class="bg-grid"></div>
+    
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-bolt"></i>
+                    <span>TechNova</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#demo">Demo</a>
+                    <a href="#tech">Tech</a>
+                    <a href="#github" class="github-btn">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="badge">REACT + TYPESCRIPT + AI</div>
+            <h1 class="hero-title">
+                <span class="gradient-text">TechNova Premium</span>
+                <span class="hero-subtitle">Modern React App with AI Integration</span>
+            </h1>
+            <p class="hero-description">
+                A premium React application built with TypeScript, Vite, and Google Gemini AI. 
+                Features modern design, interactive components, and AI-powered functionality.
+            </p>
+            
+            <div class="cta-buttons">
+                <a href="https://github.com/LupasteanRaoul/my-css-projects/tree/main/technova-premium-landing" 
+                   class="btn btn-primary" target="_blank">
+                    <i class="fas fa-code"></i> View Source Code
+                </a>
+                <a href="https://lupasteanraoul.github.io/my-css-projects/" 
+                   class="btn btn-secondary" target="_blank">
+                    <i class="fas fa-arrow-left"></i> Back to Portfolio
+                </a>
+            </div>
+
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <i class="fab fa-react"></i>
+                    <span>React 19</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-code"></i>
+                    <span>TypeScript</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-bolt"></i>
+                    <span>Vite</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-robot"></i>
+                    <span>AI Integration</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="features" id="features">
+            <h2>✨ Premium Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI Assistant</h3>
+                    <p>Integrated Google Gemini AI chatbot with real-time responses and conversation memory.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Modern Design</h3>
+                    <p>Glassmorphism, gradients, animations, and responsive layout for all devices.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>TypeScript</h3>
+                    <p>Full type safety with TypeScript, better development experience and code quality.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive</h3>
+                    <p>Fully responsive design that works perfectly on mobile, tablet, and desktop.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Demo Section -->
+        <section class="demo" id="demo">
+            <h2>🖥️ Project Structure</h2>
+            <div class="code-preview">
+                <div class="code-header">
+                    <div class="code-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="code-title">technova-premium-landing/</span>
+                </div>
+                <pre class="code-content">
+📁 components/
+├── App.tsx
+├── Header.tsx
+├── Hero.tsx
+├── Features.tsx
+├── Pricing.tsx
+├── Contact.tsx
+├── AIAssistant.tsx
+└── Footer.tsx
+
+📄 index.html
+📄 index.tsx
+📄 styles.css
+📄 vite.config.ts
+📄 package.json
+📄 tsconfig.json
+                </pre>
+            </div>
+        </section>
+
+        <!-- GitHub Link -->
+        <section class="github-section" id="github">
+            <div class="github-card">
+                <i class="fab fa-github github-icon"></i>
+                <h3>Full Source Code Available</h3>
+                <p>This is a React application that requires build tools. The complete source code is available on GitHub.</p>
+                <a href="https://github.com/LupasteanRaoul/my-css-projects/tree/main/technova-premium-landing" 
+                   class="btn btn-github" target="_blank">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+                <div class="github-stats">
+                    <span><i class="fas fa-code"></i> React + TypeScript</span>
+                    <span><i class="fas fa-cube"></i> 8 Components</span>
+                    <span><i class="fas fa-magic"></i> AI Integration</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-bolt"></i>
+                    <span>TechNova</span>
+                </div>
+                <p class="footer-text">Part of the CSS Showcase Portfolio • 6 Web Development Projects</p>
+                <div class="footer-links">
+                    <a href="https://github.com/LupasteanRaoul/my-css-projects" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://lupasteanraoul.github.io/my-css-projects/" target="_blank">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
