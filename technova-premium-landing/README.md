@@ -1,11 +1,11 @@
 TechNova Premium Landing Page
-https://api.netlify.com/api/v1/badges/your-deploy-id/deploy-status
+https://technova-premium-landing.vercel.app/
 https://img.shields.io/badge/GitHub-Repository-blue
 https://img.shields.io/badge/Portfolio-Main%2520Page-green
 
 A premium static landing page designed to showcase a React application with AI integration. Built with modern HTML5, CSS3, and JavaScript, featuring a React-like design aesthetic without the build complexity.
 
-🌐 Live Demo: velvety-sunburst-740d48.netlify.app
+🌐 Live Demo: https://technova-premium-landing.vercel.app/
 
 📋 About
 TechNova Premium is a sophisticated landing page designed to demonstrate a React/TypeScript application with AI integration. While the original concept was a React application, this implementation is a high-fidelity static version that maintains the same premium design and user experience without requiring build tools or dependencies.
@@ -67,7 +67,7 @@ Font Awesome: Icon library for UI elements
 CSS Grid & Flexbox: Modern layout systems
 
 Deployment
-Netlify: Static site hosting with automatic deployment
+Vercel: Static site hosting with automatic deployment
 
 Git: Version control
 
@@ -89,7 +89,7 @@ script.js: Lightweight JavaScript for interactivity (smooth scroll, animations, 
 
 🚀 Quick Start
 Option 1: View Live
-Simply visit the live demo: https://velvety-sunburst-740d48.netlify.app
+Simply visit the live demo:https://technova-premium-landing.vercel.app/
 
 Option 2: Run Locally
 bash
@@ -224,7 +224,7 @@ Open a Pull Request
 This project is part of the CSS Showcase Portfolio and is available under the MIT License. See the LICENSE file for details.
 
 🙏 Acknowledgments
-Netlify for free static hosting
+Vercel for free static hosting
 
 Google Fonts for typography
 
