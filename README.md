@@ -36,7 +36,7 @@
 
 **Technologies:** React, TypeScript, Vite, Tailwind CSS, Google Gemini AI  
 **Features:** React components, TypeScript safety, AI chatbot, responsive design, animations  
-🔗 **[Live Demo](https://velvety-sunburst-740d48.netlify.app/)** | **[Source Code](https://github.com/LupasteanRaoul/my-css-projects/tree/main/technova-premium-landing)**
+🔗 **[Live Demo](https://technova-premium-landing.vercel.app/)** | **[Source Code](https://github.com/LupasteanRaoul/my-css-projects/tree/main/technova-premium-landing)**
 
 ### 4. ✉️ Contact Form Design
 **Description:** Elegant contact form with real-time validation and visual feedback for users.
